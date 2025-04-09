@@ -2,6 +2,8 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
+import BookingDialog from "./BookingDialog";
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -55,13 +57,17 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
-          <Button 
-            className="bg-salon-gold hover:bg-salon-gold/90 text-white ml-4"
-          >
-            Book Now
-          </Button>
+          <BookingDialog 
+              trigger={
+                <Button 
+                  className="bg-salon-gold hover:bg-salon-gold/90 text-white ml-4"
+                >
+                  Book Now
+                </Button>
+              } 
+            />
         </nav>
-        
+
         {/* Mobile Menu Button */}
         <button 
           className="md:hidden text-salon-dark"

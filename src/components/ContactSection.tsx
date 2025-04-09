@@ -5,6 +5,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { MapPin, Phone, Mail, Clock, CalendarDays } from "lucide-react";
+import BookingDialog from "./BookingDialog";
+
 
 const ContactSection = () => {
   const { toast } = useToast();
@@ -184,12 +186,16 @@ const ContactSection = () => {
               </div>
               
               <div className="pt-4">
+                <BookingDialog 
+              trigger={
                 <Button 
                   className="bg-salon-gold hover:bg-salon-gold/90 text-white w-full flex items-center justify-center gap-2"
                 >
-                  <CalendarDays size={18} />
-                  Book Appointment
+                 <CalendarDays size={18} />
+                 Book Appointment
                 </Button>
+              } 
+            />
               </div>
             </div>
           </div>

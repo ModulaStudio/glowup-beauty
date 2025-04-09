@@ -33,12 +33,14 @@ const HeroSection = () => {
                 </Button>
               } 
             />
-            <Button 
-              variant="outline" 
-              className="border-salon-gold text-salon-dark hover:bg-salon-gold/10 px-8 py-6 text-lg"
-            >
-              Explore Services
-            </Button>
+            <a href="#services">
+              <Button 
+                variant="outline" 
+                className="border-salon-gold text-salon-dark hover:bg-salon-gold/10 px-8 py-6 text-lg"
+              >
+                Explore Services
+              </Button>
+            </a>
           </div>
           
           <div className="mt-16 grid grid-cols-3 gap-6">

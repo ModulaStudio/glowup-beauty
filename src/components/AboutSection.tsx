@@ -64,11 +64,11 @@ const AboutSection = () => {
               </div>
             </div>
             
-            <Button 
+            {/* <Button 
               className="bg-salon-gold hover:bg-salon-gold/90 text-white mt-8"
             >
               Learn More
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>
