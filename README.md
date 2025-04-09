@@ -1,4 +1,5 @@
 ✨ GlowUp Beauty Bar – Single Page Website
+
 A stylish and modern single-page website built with TypeScript and React. Designed for beauty salons, small brands, or personal services, this template is perfect for showcasing your business with elegance and simplicity.
 
 🚀 Features
