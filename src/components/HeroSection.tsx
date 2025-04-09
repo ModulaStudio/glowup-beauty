@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+import BookingDialog from "./BookingDialog";
 
 const HeroSection = () => {
   return (
@@ -23,11 +24,15 @@ const HeroSection = () => {
             We help you look and feel your absolute best.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button 
-              className="bg-salon-gold hover:bg-salon-gold/90 text-white px-8 py-6 text-lg"
-            >
-              Book Appointment
-            </Button>
+            <BookingDialog 
+              trigger={
+                <Button 
+                  className="bg-salon-gold hover:bg-salon-gold/90 text-white px-8 py-6 text-lg"
+                >
+                  Book Appointment
+                </Button>
+              } 
+            />
             <Button 
               variant="outline" 
               className="border-salon-gold text-salon-dark hover:bg-salon-gold/10 px-8 py-6 text-lg"
